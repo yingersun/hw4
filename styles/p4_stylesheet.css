@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  color: white;
+}
+li {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  white-space: wrap;
+  flex-direction: column;
+  margin: 20px;
+  width: 200px;
+  background-color: #1f2022;
+}
+
+form,
+dialog,
+label {
+  background-color: #1f2022;
+  color: white;
+}
+
+input,
+textarea {
+  color: black;
+}
+
+#add-post {
+  background-color: #1f2022;
+}
+
+button {
+  color: black;
+  background-color: #1f2022;
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 5px;
+  margin: 5px 5px 0px 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  margin: 0 auto;
+  padding: 0;
+}
+li > button {
+  width: 75px;
+}
+
+body {
+  background-color: black;
+}
+
+body {
+  background-color: #2e3033;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  /* z-index: -1; */
+  /* opacity: 0.3; */
+  /* -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); */
+}

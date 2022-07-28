@@ -1,0 +1,141 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  --blue-heading-color: rgb(7 89 133);
+  --gray-text-color: rgb(75 85 99);
+  --color-code-background: #272822;
+  --color-code-color: #f8f8f2;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+}
+
+.blue-heading-text {
+  color: var(--blue-heading-color);
+}
+
+p,
+aside,
+code,
+pre,
+li,
+summary,
+form {
+  color: var(--gray-text-color);
+}
+
+h2 {
+  color: var(--blue-heading-color);
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+h1 {
+  font-size: 1.8rem;
+}
+
+aside {
+  float: right;
+  /* width: 40%; */
+}
+section,
+header {
+  display: block;
+  box-sizing: border-box;
+  height: 100%;
+  width: 75vw;
+}
+
+.main-container,
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wide {
+  transition: width 2s, transform 2s;
+  height: 250px;
+}
+
+.wide:hover {
+  width: 50vw;
+  /* height: 50vw; */
+  transform: rotate(180deg);
+}
+
+.btc-price {
+  animation-name: price;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes price {
+  0% {
+    fill: green;
+  }
+  25% {
+    fill: green;
+  }
+  50% {
+    fill: red;
+  }
+  75% {
+    fill: green;
+  }
+  100% {
+    fill: red;
+  }
+}
+
+code {
+  background-color: var(--color-code-background);
+  color: var(--color-code-color);
+  border-radius: 0.3rem;
+  padding: 4px 5px 5px;
+  margin-top: 5px;
+  display: block;
+  width: fit-content;
+}
+
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+a:visited {
+  text-decoration: none;
+  color: var(--blue-heading-color);
+}
+
+.contact-icons {
+  display: flex;
+}
+
+.contact-icons a {
+  margin: 20px 10px 10px 0px;
+  color: var(--gray-text-color);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  video {
+    width: 90%;
+  }
+  iframe {
+    width: 50vw;
+  }
+  aside {
+    float: none;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .iframe-container iframe {
+    width: 50vw;
+  }
+}

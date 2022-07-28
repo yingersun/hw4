@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="alertbtn">Alert</button>
+    <button id="confirmbtn">Confirm</button>
+    <button id="promptbtn">Prompt</button>
+    <button id="safer_promptbtn">Safer Prompt</button>
+    <output id="output"></output>
+
+    <dialog id="alert">
+      <p>this is an alert</p>
+      <form method="dialog">
+        <button id="alert-ok">OK</button>
+      </form>
+    </dialog>
+
+    <dialog id="confirm">
+      <p>press ok to confirm. cancel to cancel</p>
+      <form method="dialog">
+        <button id="confirm-ok">ok</button>
+        <button id="confirm-cancel">cancel</button>
+      </form>
+    </dialog>
+
+    <dialog id="prompt">
+      <p>this is a prompt</p>
+      <form method="dialog">
+        <input id="prompt-input" type="text" />
+        <button id="prompt-ok">ok</button>
+        <button id="prompt-cancel">cancel</button>
+      </form>
+    </dialog>
+
+    <dialog id="safer_prompt">
+      <p>this is a prompt</p>
+      <form method="dialog">
+        <input id="safer_prompt-input" type="text" />
+        <button id="safer_prompt-ok">ok</button>
+        <button id="safer_prompt-cancel">cancel</button>
+      </form>
+    </dialog>
+
+    <output id="output"></output>
+  </body>
+  <script type="text/javascript" src="node_modules/dompurify/dist/purify.js"></script>
+  <script type="module" src="scripts/customdialog.js"></script>
+</html>
